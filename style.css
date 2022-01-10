@@ -1,0 +1,24 @@
+body {
+  background-image: url("media/background.jpg");
+  background-size: 100% auto;
+  display: flex;
+  min-height: 100vh;
+}
+
+div {
+  margin: auto;
+  background-color: #0000009e;
+  border: 2px solid black;
+  text-transform: uppercase;
+  color: #ddb623;
+  width: 85px;
+  height: 80px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 1.2vh;
+}
+
+div::first-letter {
+  color: white;
+  font-size: 40px;
+}
