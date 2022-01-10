@@ -3,6 +3,7 @@ body {
   background-size: 100% auto;
   display: flex;
   min-height: 100vh;
+  font-family: monospace;
 }
 
 div {
@@ -11,14 +12,23 @@ div {
   border: 2px solid black;
   text-transform: uppercase;
   color: #ddb623;
-  width: 85px;
-  height: 80px;
+  width: 80px;
+  height: 75px;
   vertical-align: middle;
   text-align: center;
   padding-top: 1.2vh;
+  transition: all linear 0.3s;
 }
 
 div::first-letter {
   color: white;
   font-size: 40px;
+}
+
+.clicked {
+  border: 2px solid #ddb623;
+  box-shadow: 0 0 20px #ddb623;
+
+  transform: scale(1.5);
+  animation-iteration-count: 1.5;
 }
